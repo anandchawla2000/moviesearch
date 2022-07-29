@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*-----------Comman css -------*/
+
+html{
+   font-size: 62.5%;
+   background-color: var(--bg-color);
+   font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --bg-color: #212529;
+    --text-color: #ffffff;
+    --card-bg:#909294;
+}
+
+h1,h2,p{
+    color: var(--text-color);
+}
+
+/*---------Header css----------*/
+input[type="text"]{
+    height: 4rem;
+    border-radius: 2rem;
+    padding-left: 1.6rem;
+    margin-right: 2rem;
+}
+
+.displaycolumn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.headpart{
+    padding-top: 3rem;;
+    gap: 1.5rem;
+}
+
+/*--------Movie-------*/
+.card img{
+    width: 22rem;
+    height: 30rem;
+    border-radius: 1rem;
+}
+
+.card{
+    background-color: var(--card-bg);
+    width: 26rem;
+    height: 38rem;
+    border-radius: 2rem;
+}
+
+.carddata{
+    padding: 6.5% 7.5%;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-row-gap: 4rem;
+}
+
+.movielist{
+    margin-top: 3rem;
+    justify-content: space-around;
+}
+
+.carddata h2{
+    text-align: center;
+    padding-top: -2rem;
+    margin-bottom:1rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+.single_card{
+    width: 70rem;
+    height: 40rem;
+    background-color: aqua;
+    margin-top: 15rem;
+    border-radius: 5rem;
+}
+.singledata{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.single_card{
+    display: flex;
+}
+
+.leftdata img{
+    height: 35rem;
+    width: 25rem;
+    border-radius: 1rem;
+    margin: 1rem 1rem;
+}
+
+.leftdata{
+    padding-top: 1.5rem;
+    padding-left: 1.5rem;
+}
+
+.rightdata{
+    padding-top: 2rem;
+    position: relative;
+    width: 100%;
+}
+
+.rightdata h2{
+    font-size: 3.2rem;
+    color: black;
+    padding-top: 2rem;
+}
+
+.innerrightdata{
+    margin-top: 2rem;
+}
+
+.rightdata p{
+    padding-top: 1.8rem;
+    font-size: 2.6rem;
+    color: black;
+}
+
+.card:hover{
+    transform: scaleY(1.1);
+    transform: scaleX(1.1);
+    transition-duration:2s
+}
+
+.gobckbuuton{
+    position: absolute;
+    bottom: 54px;
+    right:57px;
+    /* bottom: 150px;
+    right: 392px; */
+}
+
+.gobckbuuton button{
+    font-size: 2.3rem;
+    border-radius: 0.6rem;
+    padding: 1rem 1rem;
+    background-color: aqua;
+    border:none;
+}
+
+.gobckbuuton button:hover{
+    background-color: antiquewhite;
+    transition-duration: 2s;
+}
+
+.helpicon{
+    bottom: 0;
+    right: 2rem;
+    position: fixed;
+}
+
+.Loading,.error{
+    text-align: center;
+}
+
+.error h2{
+    color: red;
+}
+
+/* Error Page */
+.errorpage{
+    height: 100vh;
+    width: 100%;
+    background-color: white;
+}
+
+.errorcard{
+    width: 100%;
+    height: 10rem;
+    text-align: center;
+    
+}
+
+.errorcard h2{
+    font-size: 15rem;
+    color: black;
+}
+ 
+/* About page */
+.containeras{
+    height: 100vh;
+    display: flex;
+}
+
+.Aboutcard{
+background-color: white;
+   width: 50%;
+   margin: auto;
+   height: 50%;
+   position: relative;
+}
+
+.Aboutcard hr{
+    width: 15%;
+    margin: auto;
+}
+
+.Aboutcard h1,.Aboutcard p{
+    color: black !important;
+}
+
+.Aboutcard h1{
+    text-align: center;
+    padding-top: 1.5rem;
+    font-size: 2.5rem;
+}
+
+.Aboutcard p{
+    padding-top: 1.5rem;
+    padding-left: 1.5rem;
+    font-size: 2rem;
+}
+
+.anand{
+    text-align: end;
+    padding-right: 5rem;
+}
+
